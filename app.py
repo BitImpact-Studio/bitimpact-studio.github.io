@@ -1,9 +1,12 @@
 from flask import Flask, render_template
 from flask_frozen import Freezer
 
+build = False
 
 app = Flask(__name__)
-freezer = Freezer(app)
+
+if build:
+    freezer = Freezer(app)
 
 
 @app.route('/')
@@ -22,4 +25,7 @@ def games():
 
 
 if __name__ == '__main__':
-    freezer.freeze()
+    if not build:
+        app.run(debug=True)
+    else:
+        freezer.freeze()

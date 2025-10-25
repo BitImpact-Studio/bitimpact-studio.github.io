@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Games - BitImpact Studio{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<section class="flex flex-col items-center justify-center text-center py-32 bg-black text-white">
+    <h1 class="text-5xl font-extrabold mb-6">Our Games</h1>
+    <p class="text-lg text-gray-200 mb-8 max-w-md">
+        Explore the game we’ve created with passion, creativity, and might be some caffeine.
+    </p>
+    <a href="/about" class="bg-transparent text-white outline hover:bg-white hover:text-black px-6 py-3 rounded-md transition-colors">
+        Learn More About Us
+    </a>
+</section>
+
+<!-- Games Showcase Section -->
+<section class="bg-black py-20 text-white container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">Being Worked On</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-10 px-6">
+        <!-- Game Card Example -->
+        <section class="bg-black text-white flex justify-center">
+            <div class="bg-neutral-900 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform max-w-sm max-h-full">
+                <img src="https://img.itch.zone/aW1nLzIyMTExNDkzLmdpZg==/315x250%23c/Jy2MuJ.gif" alt="Game 1" class="rounded-md mb-4 mx-auto">
+                <h3 class="text-xl font-semibold mb-2 text-center">Color Swap Climb</h3>
+                <p class="text-gray-300 mb-8 text-center">
+                    A small platformer game. Swap your color to climb higher.
+                </p>
+                <a href="https://mikizone.itch.io/color-swap-climb"
+                class="block text-center bg-transparent text-white outline mb-2 hover:bg-white hover:text-black hover:outline-transparent px-6 py-3 rounded-md transition-colors">
+                Play on Itch.io
+                </a>
+            </div>
+        </section>
+    </div>
+</section>
+
+<!-- Call-to-Action -->
+<section class="py-20 bg-black text-center">
+    <h2 class="text-3xl text-white font-bold mb-6">Want More?</h2>
+    <p class="text-lg text-gray-200 mb-8 max-w-lg mx-auto">
+        Join our Discord server to give ideas or suggestions!
+    </p>
+    <div class="mt-6">
+        <a href="https://discord.gg/RuMZz8UKYH" class="bg-transparent text-white outline hover:bg-white hover:text-black px-6 py-3 rounded-md transition-colors inline-block">
+            Join Us
+        </a>
+    </div>
+</section>
+{% endblock %}

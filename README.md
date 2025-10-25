@@ -1,2 +1,2 @@
 # bitimpact-studio.github.io
-A repository of BitImpact Studio's website
+An official repository of the BitImpact Studio website

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | BitImpact Studio</title>
+
+    <!-- Import Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="bg-black shadow">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <a href="/" class="flex items-center">
+                <img src="/static/images/horizontal.png" alt="BITIMPACT" class="w-1/6">
+            </a>
+            <ul class="flex space-x-6">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/games" class="hover:underline">Games</a></li>
+                <li><a href="/about" class="hover:underline">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 404 Content -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-4">
+        <h1 class="text-7xl font-extrabold mb-4">404</h1>
+        <h2 class="text-2xl font-semibold mb-6">Page Not Found</h2>
+        <p class="text-gray-400 max-w-md mb-10">
+            Looks like you wandered into a black hole. The page you’re looking for doesn’t exist or has been moved.
+        </p>
+        <a href="/" class="bg-transparent border border-white text-white px-6 py-3 rounded-md hover:bg-white hover:text-black transition-colors">
+            Go Back Home
+        </a>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-center text-gray-500 py-4">
+        <p>&copy; 2025 BitImpact Studio</p>
+    </footer>
+
+</body>
+</html>
